@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>제목</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- AOS Libarary -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script> 
+
+    <link type="text/css" rel="stylesheet" href="css/messageCSS.css">
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="JQjs/jquery.colorbox.js"></script>
+    <script src="js/introJs.js"></script>
+
+    
+
+    <link type="text/css" rel="stylesheet" href="JQcss/jquery-ui.css">
+    <link type="text/css" rel="stylesheet" href="JQcss/jquery-ui.structure.css">
+    <link type="text/css" rel="stylesheet" href="JQcss/jquery-ui.theme.css">
+    <link type="text/css" rel="stylesheet" href="JQcss/colorbox.css">
+    <link type="text/css" rel="stylesheet" href="css/introCSS.css">
+    <style>
+        @font-face {
+            font-family: 'Gyeongi_bold';
+            src: url("font/경기천년제목_Bold.ttf");
+        }
+
+        @font-face {
+            font-family: 'Gyeongi_medium';
+            src: url("font/경기천년제목_Medium.ttf");
+        }
+
+        #Intro ul li,
+        #Intro1 ul li,
+        #Intro2 ul li {
+            font-family: Gyeongi_bold;
+
+        }
+
+        #Intro ul li a,
+        #Intro1 ul li a,
+        #Intro2 ul li a {
+            font-family: Gyeongi_medium;
+            font-size: 0.8em;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a id="Logo" href="index.html"><img src="images/logo.png" width="300px" height="50px"></a>
+        <nav id="menubar" onmouseover="makeDorpbar()" onmouseout="removeDorpbar()">
+          <ul>
+            <li><a onmouseover="makeDorpbar()" onmouseout="removeDorpbar()" href="#"
+                style="font-family: Gyeongi_bold;">회사소개</a></li>
+            <li><a onmouseover="makeDorpbar()" onmouseout="removeDorpbar()" href="#" style="font-family: Gyeongi_bold;">개발자
+                커뮤니티</a></li>
+            <li><a onmouseover="makeDorpbar()" onmouseout="removeDorpbar()" href="#"
+                style="font-family: Gyeongi_bold;">게시물</a></li>
+            <li><a onmouseover="makeDorpbar()" onmouseout="removeDorpbar()" href="#"
+                style="font-family: Gyeongi_bold;">이벤트</a></li>
+            <li><button type="button" class="message"><img src="images/message.png" id="messageBtn"></button></li>
+            <li><button  type="button"><img src="images/profile.png" id="profileBtn"></button></li>
+          </ul>
+        </nav>
+    
+      </header>
+    
+      <!-- 드롭 다운 메뉴바 -->
+      <div id="dropbar" onmouseover="makeDorpbar()" onmouseout="removeDorpbar()">
+        <nav id="Intro">
+          <ul>
+            <li>회사소개</li>
+            <li><a href="introduction.html">DEMUNITY란?</a></li>
+            <li><a href="$">임원진 소개</a></li>
+            <li><a href="$">CEO 소개</a></li>
+            <li><a href="$">회사오는 길</a></li>
+          </ul>
+        </nav>
+        <nav id="Intro">
+          <ul>
+            <li>개발자 커뮤니티</li>
+            <li><a href="$">직종별로</a></li>
+            <li><a href="$">언어별로</a></li>
+            <li><a href="$">회사별로</a></li>
+            <li><a href="$">그 외 개인설정</a></li>
+          </ul>
+        </nav>
+        <nav id="Intro1">
+          <ul>
+            <li>게시물</li>
+            <li><a href="$">공지사항</a></li>
+            <li><a href="$">칼럼</a></li>
+            <li><a href="$">Q&A게시판</a></li>
+            <li><a href="$">커뮤니티 게시판</a></li>
+          </ul>
+        </nav>
+        <nav id="Intro1">
+          <ul>
+            <li>이벤트</li>
+            <li><a href="$">이벤트함</a></li>
+            <li><a href="$">게임</a></li>
+            <li><a href="$">DEM룰렛판</a></li>
+            <li><a href="$">진행중인 이벤트</a></li>
+          </ul>
+        </nav>
+      </div>
+      <section>
+          <img src="images/introM.png" style="max-width: 100%; min-width: 1024px">
+          <!-- <div class="sticky">
+              <div class="slide-container">
+                  <div class="slide" ref="sl1">
+                      <div class="slide-big-text"></div>
+                  </div>
+              </div>
+          </div> -->
+          <script> 
+            AOS.init(); 
+        </script>
+        
+          <div
+    data-aos="zoom-in"
+    data-aos-offset="200"
+    data-aos-delay="50"
+    data-aos-duration="1000"
+    data-aos-easing="ease-in-out"
+    data-aos-mirror="true"
+    data-aos-once="false"
+    data-aos-anchor-placement="top-center"
+    style="float: left;"
+  >
+  테스트
+  테스트
+  테스트
+  </div>
+      </section>
+</body>
+
+</html>

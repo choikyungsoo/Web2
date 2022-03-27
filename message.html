@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>제목</title>
+    <meta charset="utf-8">
+    <link type="text/css" rel="stylesheet" href="css/messageCSS.css">
+    <script src="js/messageJs.js"></script>
+    <style>
+        @font-face {
+            font-family: 'Gyeongi_bold';
+            src: url("font/경기천년제목_Bold.ttf");
+        }
+
+        @font-face {
+      font-family: 'Gyeongi_medium';
+      src: url("font/경기천년제목_Medium.ttf");
+    }
+    </style>
+</head>
+
+<body>
+    <section>
+        <img src="images/messageLogo.png" style="width: 20px; height: 20px; margin-left: 10px;">
+        <h2 id="MessageTitle"  style="font-family: Gyeongi_medium;">메세지목록</h2>
+        <table>
+            <thead><tr><th>보낸사람</th><th>내용</th><th>날짜</th></tr></thead>
+            <tbody>
+                <tr onclick="meassageList()"><td>ㅁㅁㅁ</td><td>안녕하세요! 테스트</td><td>어제</td></tr>
+                <tr><td>ㅁㅁㅁ</td><td>안녕하세요! 테스트</td><td>어제</td></tr>
+                <tr><td>ㅁㅁㅁ</td><td>안녕하세요! 테스트</td><td>어제</td></tr>
+            </tbody>
+        </table>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+
+  <script src="js/jquery-3.6.0.js"></script>
+  <script src="JQjs/jquery-ui.js"></script>
+  <script src="JQjs/jquery.bxslider.js"></script>
+  <script src="JQjs/jquery.colorbox.js"></script>
+  <script src="js/indexJs.js"></script>
+
+  <link type="text/css" rel="stylesheet" href="JQcss/jquery-ui.css">
+  <link type="text/css" rel="stylesheet" href="JQcss/jquery-ui.structure.css">
+  <link type="text/css" rel="stylesheet" href="JQcss/jquery-ui.theme.css">
+  <link type="text/css" rel="stylesheet" href="JQcss/jquery.bxslider.css">
+  <link type="text/css" rel="stylesheet" href="JQcss/colorbox.css">
+  <link type="text/css" rel="stylesheet" href="css/indexCSS.css">
+
+  <style>
+    @font-face {
+      font-family: 'Gyeongi_bold';
+      src: url("font/경기천년제목_Bold.ttf");
+    }
+
+    @font-face {
+      font-family: 'Gyeongi_medium';
+      src: url("font/경기천년제목_Medium.ttf");
+    }
+
+    #Intro ul li, #Intro1 ul li, #Intro2 ul li {
+      font-family: Gyeongi_bold;
+
+    }
+
+    #Intro ul li a, #Intro1 ul li a, #Intro2 ul li a{
+      font-family: Gyeongi_medium;
+      font-size: 0.8em;
+      color: white;
+    }
+  </style>
+  <script>
+    $(function () {
+      $("#sortable").sortable();
+      $("#sortable").disableSelection();
+    });
+
+  </script>
+  </script>
+</head>
+
+<body>
+
+  <header>
+    <a id="Logo" href="index.html"><img src="images/logo.png" width="300px" height="50px"></a>
+    <nav id="menubar" onmouseover="makeDorpbar()" onmouseout="removeDorpbar()">
+      <ul>
+        <li><a onmouseover="makeDorpbar()" onmouseout="removeDorpbar()" href="#"
+            style="font-family: Gyeongi_bold;">회사소개</a></li>
+        <li><a onmouseover="makeDorpbar()" onmouseout="removeDorpbar()" href="#" style="font-family: Gyeongi_bold;">개발자
+            커뮤니티</a></li>
+        <li><a onmouseover="makeDorpbar()" onmouseout="removeDorpbar()" href="#"
+            style="font-family: Gyeongi_bold;">게시물</a></li>
+        <li><a onmouseover="makeDorpbar()" onmouseout="removeDorpbar()" href="#"
+            style="font-family: Gyeongi_bold;">이벤트</a></li>
+        <li><button type="button" class="message"><img src="images/message.png" id="messageBtn"></button></li>
+        <li><button  type="button"><img src="images/profile.png" id="profileBtn"></button></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <!-- 드롭 다운 메뉴바 -->
+  <div id="dropbar" onmouseover="makeDorpbar()" onmouseout="removeDorpbar()">
+    <nav id="Intro">
+      <ul>
+        <li>회사소개</li>
+        <li><a href="introduction.html">DEMUNITY란?</a></li>
+        <li><a href="$">임원진 소개</a></li>
+        <li><a href="$">CEO 소개</a></li>
+        <li><a href="$">회사오는 길</a></li>
+      </ul>
+    </nav>
+    <nav id="Intro">
+      <ul>
+        <li>개발자 커뮤니티</li>
+        <li><a href="$">직종별로</a></li>
+        <li><a href="$">언어별로</a></li>
+        <li><a href="$">회사별로</a></li>
+        <li><a href="$">그 외 개인설정</a></li>
+      </ul>
+    </nav>
+    <nav id="Intro1">
+      <ul>
+        <li>게시물</li>
+        <li><a href="$">공지사항</a></li>
+        <li><a href="$">칼럼</a></li>
+        <li><a href="$">Q&A게시판</a></li>
+        <li><a href="$">커뮤니티 게시판</a></li>
+      </ul>
+    </nav>
+    <nav id="Intro1">
+      <ul>
+        <li>이벤트</li>
+        <li><a href="$">이벤트함</a></li>
+        <li><a href="$">게임</a></li>
+        <li><a href="$">DEM룰렛판</a></li>
+        <li><a href="$">진행중인 이벤트</a></li>
+      </ul>
+    </nav>
+  </div>
+  <section>
+    <!-- 왼쪽 사이드 내용 -->
+    <!-- 로그인 창 및 개인 네비게이션 -->
+    <div class="aside">
+      <aside>
+        <!-- 프로필 -->
+        <fieldset id="profile">
+          <div id="images">
+            <img src="images/Loginprofile.png">
+          </div>
+          <div id="loginBtn">
+            <input type="button" value="로그인하기" style="font-family: Gyeongi_bold;" onClick="location.href='index.html'">
+          </div>
+          <div id="loginFC">
+            <ul>
+              <li><a href="#" style="font-family: Gyeongi_bold;">회원가입</a></li>
+              <li>&#183;</li>
+              <li><a href="#" style="font-family: Gyeongi_bold;">아이디 찾기</a></li>
+              <li>&#183;</li>
+              <li><a href="#" style="font-family: Gyeongi_bold;">비밀번호 찾기</a></li>
+            </ul>
+          </div>
+        </fieldset>
+        <!-- 검색창 -->
+        <div id="searchBar">
+          <input type="text" placeholder="게시판 글 검색하기" style="font-family: Gyeongi_medium;">
+          <button type="button">
+            <img src="images/searchIcon.png">
+          </button>
+        </div>
+
+        <!-- 개인 네비게이션 -->
+        <div>
+          <ul id="sortable">
+            <li class="ui-state-default" style="font-family: Gyeongi_bold;">&#8801;&nbsp;&nbsp; 게시물 작성</li>
+            <li class="ui-state-default" style="font-family: Gyeongi_bold;">&#8801;&nbsp;&nbsp; 내가 쓴글</li>
+            <li class="ui-state-default" style="font-family: Gyeongi_bold;">&#8801;&nbsp;&nbsp; 댓글 단 글</li>
+            <li class="ui-state-default" style="font-family: Gyeongi_bold;">&#8801;&nbsp;&nbsp; 내 스크랩</li>
+          </ul>
+        </div>
+
+      </aside>
+    </div>
+    <!-- 본문 내용 -->
+    <div class="article">
+      <article>
+        <div class="AdBanner">
+          <div class="bxslider">
+            <div class="AdImg1"><img src="images/btn1.png" title="광고1"></div>
+            <div class="AdImg1"><img src="images/btn2.png" title="광고2"></div>
+            <div class="AdImg1"><img src="images/btn3.png" title="광고3"></div>
+            <div class="AdImg1"><img src="images/btn4.png" title="광고4"></div>
+          </div>
+        </div>
+        <div class="mainArticle">
+          <div class="notice">
+            <table id="noticeTab">
+              <thead>
+                <tr>
+                  <th id="noticTitle" style="font-family: Gyeongi_bold;">공지사항</th>
+                </tr>
+              </thead>
+              <tbody id="nContent">
+                <tr>
+                  <td style="font-family: Gyeongi_medium; ">안녕하세요 테스용 글입니다1. 잘부탁드려요</td>
+                </tr>
+                <tr>
+                  <td style="font-family: Gyeongi_medium;">안녕하세요 테스용 글입니다2. 잘부탁드려요</td>
+                </tr>
+                <tr>
+                  <td style="font-family: Gyeongi_medium;">안녕하세요 테스용 글입니다3. 잘부탁드려요</td>
+                </tr>
+                <tr>
+                  <td style="font-family: Gyeongi_medium;">안녕하세요 테스용 글입니다4. 잘부탁드려요</td>
+                </tr>
+                <tr>
+                  <td style="font-family: Gyeongi_medium;">안녕하세요 테스용 글입니다5. 잘부탁드려요</td>
+                </tr>
+                <tr>
+                  <td style="font-family: Gyeongi_medium;">안녕하세요 테스용 글입니다6. 잘부탁드려요</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="QandA">
+            <table id="noticeTab">
+              <thead>
+                <tr>
+                  <th id="noticTitle" style="font-family: Gyeongi_bold;">Q&A 게시판</th>
+                </tr>
+              </thead>
+              <tbody id="nContent">
+                <tr>
+                  <td style="font-family: Gyeongi_medium; ">안녕하세요 테스용 글입니다1. 잘부탁드려요</td>
+                </tr>
+                <tr>
+                  <td style="font-family: Gyeongi_medium;">안녕하세요 테스용 글입니다2. 잘부탁드려요</td>
+                </tr>
+                <tr>
+                  <td style="font-family: Gyeongi_medium;">안녕하세요 테스용 글입니다3. 잘부탁드려요</td>
+                </tr>
+                <tr>
+                  <td style="font-family: Gyeongi_medium;">안녕하세요 테스용 글입니다4. 잘부탁드려요</td>
+                </tr>
+                <tr>
+                  <td style="font-family: Gyeongi_medium;">안녕하세요 테스용 글입니다5. 잘부탁드려요</td>
+                </tr>
+                <tr>
+                  <td style="font-family: Gyeongi_medium;">안녕하세요 테스용 글입니다6. 잘부탁드려요</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="column">
+            <table id="noticeTab">
+              <thead>
+                <tr>
+                  <th id="noticTitle" style="font-family: Gyeongi_bold;">칼럼</th>
+                </tr>
+              </thead>
+              <tbody id="nContent">
+                <tr>
+                  <td style="font-family: Gyeongi_medium; ">안녕하세요 테스용 글입니다1. 잘부탁드려요</td>
+                </tr>
+                <tr>
+                  <td style="font-family: Gyeongi_medium;">안녕하세요 테스용 글입니다2. 잘부탁드려요</td>
+                </tr>
+                <tr>
+                  <td style="font-family: Gyeongi_medium;">안녕하세요 테스용 글입니다3. 잘부탁드려요</td>
+                </tr>
+                <tr>
+                  <td style="font-family: Gyeongi_medium;">안녕하세요 테스용 글입니다4. 잘부탁드려요</td>
+                </tr>
+                <tr>
+                  <td style="font-family: Gyeongi_medium;">안녕하세요 테스용 글입니다5. 잘부탁드려요</td>
+                </tr>
+                <tr>
+                  <td style="font-family: Gyeongi_medium;">안녕하세요 테스용 글입니다6. 잘부탁드려요</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="community">
+            <table id="noticeTab">
+              <thead>
+                <tr>
+                  <th id="noticTitle" style="font-family: Gyeongi_bold;">커뮤니티 게시판</th>
+                </tr>
+              </thead>
+              <tbody id="nContent">
+                <tr>
+                  <td style="font-family: Gyeongi_medium;">안녕하세요 테스용 글입니다1. 잘부탁드려요</td>
+                </tr>
+                <tr>
+                  <td style="font-family: Gyeongi_medium;">안녕하세요 테스용 글입니다2. 잘부탁드려요</td>
+                </tr>
+                <tr>
+                  <td style="font-family: Gyeongi_medium;">안녕하세요 테스용 글입니다3. 잘부탁드려요</td>
+                </tr>
+                <tr>
+                  <td style="font-family: Gyeongi_medium;">안녕하세요 테스용 글입니다4. 잘부탁드려요</td>
+                </tr>
+                <tr>
+                  <td style="font-family: Gyeongi_medium;">안녕하세요 테스용 글입니다5. 잘부탁드려요</td>
+                </tr>
+                <tr>
+                  <td style="font-family: Gyeongi_medium;">안녕하세요 테스용 글입니다6. 잘부탁드려요</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </article>
+    </div>
+    <!-- 오른쪽 사이드 내용 -->
+    <div class="aside">
+      <aside>
+        <div class="asContent">
+          <h3 style="font-family: Gyeongi_bold;">실시간 인기글</h3>
+          <a href="#" class="popular">
+            <div class="DesShort" style="background: rgba(0, 176, 240, 0.801); ">
+              <p id="Ctitle" style="font-family: Gyeongi_bold;">실시간 인기글 올라옴!</p>
+              <p id="Cdescrip" style="font-family: Gyeongi_medium;">와 얘들아, 나 처음으로 실시간 인기글 올라와봄</p>
+              <ul class="GRFunc">
+                <li>
+                  <h4 id="CCategory" style="font-family: Gyeongi_medium;">커뮤니티 게시판</h4>
+                </li>
+                <li class="good"><img src="images/good.png" style="width: 15px; height: 15px;"></li>
+                <li class="reply" style="font-family: Gyeongi_medium;">20</li>
+                <li class="good"><img src="images/reply.png" style="width: 15px; height: 15px;"></li>
+                <li class="reply" style="font-family: Gyeongi_medium;">10</li>
+              </ul>
+            </div>
+          </a>
+          <a href="#" class="popular">
+            <div class="DesShort" style="background: rgba(0, 176, 240, 0.801); ">
+              <p id="Ctitle" style="font-family: Gyeongi_bold;">실시간 인기글 올라옴!</p>
+              <p id="Cdescrip" style="font-family: Gyeongi_medium;">와 얘들아, 나 처음으로 실시간 인기글 올라와봄</p>
+              <ul class="GRFunc">
+                <li>
+                  <h4 id="CCategory" style="font-family: Gyeongi_medium;">커뮤니티 게시판</h4>
+                </li>
+                <li class="good"><img src="images/good.png" style="width: 15px; height: 15px;"></li>
+                <li class="reply" style="font-family: Gyeongi_medium;">20</li>
+                <li class="good"><img src="images/reply.png" style="width: 15px; height: 15px;"></li>
+                <li class="reply" style="font-family: Gyeongi_medium;">10</li>
+              </ul>
+            </div>
+          </a>
+        </div>
+        <div style="margin-left: 10px;">
+          <h3 style="font-family: Gyeongi_bold;">HOT 게시글</h3>
+          <a href="#" class="popular">
+            <div class="DesShort" style="background: rgba(0, 176, 240, 0.801); ">
+              <p id="Ctitle" style="font-family: Gyeongi_bold;">실시간 인기글 올라옴!</p>
+              <p id="Cdescrip" style="font-family: Gyeongi_medium;">와 얘들아, 나 처음으로 실시간 인기글 올라와봄</p>
+              <ul class="GRFunc">
+                <li>
+                  <h4 id="CCategory" style="font-family: Gyeongi_medium;">커뮤니티 게시판</h4>
+                </li>
+                <li class="good"><img src="images/good.png" style="width: 15px; height: 15px;"></li>
+                <li class="reply" style="font-family: Gyeongi_medium;">20</li>
+                <li class="good"><img src="images/reply.png" style="width: 15px; height: 15px;"></li>
+                <li class="reply" style="font-family: Gyeongi_medium;">10</li>
+              </ul>
+            </div>
+          </a>
+          <a href="#" class="popular">
+            <div class="DesShort" style="background: rgba(0, 176, 240, 0.801); ">
+              <p id="Ctitle" style="font-family: Gyeongi_bold;">실시간 인기글 올라옴!</p>
+              <p id="Cdescrip" style="font-family: Gyeongi_medium;">와 얘들아, 나 처음으로 실시간 인기글 올라와봄</p>
+              <ul class="GRFunc">
+                <li>
+                  <h4 id="CCategory" style="font-family: Gyeongi_medium;">커뮤니티 게시판</h4>
+                </li>
+                <li class="good"><img src="images/good.png" style="width: 15px; height: 15px;"></li>
+                <li class="reply" style="font-family: Gyeongi_medium;">20</li>
+                <li class="good"><img src="images/reply.png" style="width: 15px; height: 15px;"></li>
+                <li class="reply" style="font-family: Gyeongi_medium;">10</li>
+              </ul>
+            </div>
+          </a>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <footer>
+    <img id="footerImg" src="images/footer.png">
+  </footer>
+</body>
+
+</html>

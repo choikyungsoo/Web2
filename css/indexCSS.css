@@ -1,0 +1,417 @@
+/* 미디어 쿼리 */
+@media only screen and (min-width: 1117px) {
+    #menubar{
+        float: right;
+        width: 764px;
+    }
+
+    
+    #images > img{
+        margin-top: 20%;
+    }
+    section{
+        width: 100%;
+        float: left;
+    }
+    article{
+        width: 700px;
+    }
+    
+    aside{
+        float: left;
+        width: 25%;
+    }
+    article{
+        float: left;
+        width: 50%;
+    }
+    #loginBtn > input[type="button"]  {
+        margin-top: 20%;
+    }
+
+   
+  #footerImg{
+    width: 100%;
+}
+}
+@media only screen and (min-width: 1385px){
+    #loginBtn > input[type="button"]  {
+        margin-top: 7%;
+    }
+    #images > img{
+        margin-top: 10%;
+    }
+    article{
+        height: 1500px;
+    }
+}
+
+@media only screen and (max-width: 1241px){
+    section{
+        width: 1241px;
+        display: inline-block;
+    }
+    aside{
+        float: left;
+        width: 300px;
+        display: block;
+    }
+    article{
+        width: 570px;
+        float: left;
+    }
+    #loginBtn > input[type="button"]  {
+        margin-top: 20%;
+    }
+    .aside{
+        float: left;
+        display: block;
+        width: 310px;
+    }
+    .article{
+        float: left;
+        display: block;
+        width: 570px;
+    }
+    #images > img{
+        margin-top: 20%;
+    }
+    #searchBar{
+        width: 259px;
+    }
+    
+  #footerImg{
+    width: 1187px;
+}
+}
+.AdBanner li{
+    display: inline-block;
+    list-style-type :none;
+}
+.AdBanner li img{
+    width: 98%;
+}
+
+/* 태그 셀렉터 */
+header{
+    width: 100%;
+    height: 100px;
+    float: left;
+}
+
+section{
+    height: 1100px;
+}
+
+aside{
+    height: 700px;
+}
+
+article{
+    height: 900px;
+}
+
+
+footer{
+    float: left;
+    width: 100%;
+    height: 250px;
+}
+
+input[type="text"]{
+   display: inline;
+   border: none;
+   width: 72%;
+   padding-top: 12px;
+   padding-bottom: 11px;
+   box-shadow: 3px 3px 3px black;
+}
+
+input[type="text"]:focus{
+    outline: none;
+ }
+/* 아이디 셀렉터 */
+#loginBtn > input[type="button"]  {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+   padding: 4% 20% 4% 20%;
+   background: white;
+   align-items: center;
+   border-radius: 5px;
+   /* border: 1px solid white; */
+}
+#Logo{
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+#menubar{
+    height: 100px;
+}
+
+#menubar ul{
+    margin-top: 35px;
+    padding: 0;
+    width: 1223px;
+}
+
+#menubar ul li{
+    display: inline-block;
+    list-style-type :none;
+    margin-right: 70px;
+}
+#menubar ul li:nth-child(5){
+    padding: 0px 0px;
+    margin-right: 0px;
+}
+
+#menubar ul li:nth-child(6){
+    padding: 0px 0px;
+    margin-right: 30px;
+}
+#menubar ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+#menubar ul li button{
+    background-color: white;
+    border-radius: 10px;
+}
+
+#menubar ul li a:hover{
+    color: rgba(0, 176, 240, 0.801);
+}
+#Intro, #Intro1{
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+}
+#Intro ul, #Intro1 ul{
+    padding: 0;
+    width: 100%;
+}
+
+#Intro ul li, #Intro1 ul li{
+    display: inline-block;
+    list-style-type :none;
+    font-size: 1.3em;
+}
+
+#Intro ul li{
+    padding: 0px 45px;
+}
+#Intro1 ul li{
+    padding: 0px 54px;
+}
+
+#Intro ul li a, #Intro1 ul li a{
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#Intro ul li a:hover, #Intro1 ul li a:hover{
+    color: black;
+}
+#messageBtn, #profileBtn{
+    width: 24px;
+    height: 24px;
+}
+
+#profile{
+    margin: 20px;
+    height: 300px;
+    background: rgba(0, 176, 240, 0.801);
+    border: 0px;
+}
+
+#images > img{
+    width:35%; 
+    height: 35%; 
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#loginFC ul{
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 5px;
+    padding: 0;
+    width: 235px;
+}
+
+
+#loginFC ul li{ 
+    display: inline-block;
+    list-style-type :none;
+}
+
+#loginFC ul li a{
+   
+    color: black;
+    text-decoration: none;
+    font-size: 5px;
+    transition: color 0.3s ease;
+}
+
+#loginFC ul li a:hover{
+   color: white;
+}
+
+#searchBar{
+    display: flex;
+    margin-left: 5%;
+    width: 100%;
+}
+
+#searchBar > button[type="button"]{
+    display: inline;
+    border: none;
+    padding-top: 9px;
+    padding-bottom: 11px;
+    background: white;
+    box-shadow: 3px 3px 3px black;
+    width: 15%;
+
+}
+#searchBar > button[type="button"]:hover{
+    border: 1px solid rgb(247, 247, 247);
+}
+#searchBar > button[type="button"] > img{
+    width: 20px;
+    height: 20px;
+}
+
+#PersonNav > td, th{
+    text-align: center;
+    padding: 5px;
+
+}
+
+/* JQuery */
+#sortable {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    list-style-type: none;
+    padding: 0;
+    width: 92%;
+  }
+
+  #sortable li {
+      align-items: center;
+    margin: 0 3px 3px 3px;
+    padding: 0.4em;
+    padding-left: 0.4em;
+    font-size: 1.2em;
+    height: 24px;
+    color: black;
+    background: rgba(0, 176, 240, 0.801);
+    border: none;
+  }
+
+  #sortable li:hover {
+      box-shadow: 5px 5px 6px black;
+  }
+
+
+  #noticeTab{
+      width: 100%;
+      padding: 10px;
+  }
+
+  #noticTitle{
+      text-align: left;
+      padding-top: 15px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid rgb(48, 48, 48);
+  }
+
+  #nContent td{
+    font-size: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 100%;
+  }
+
+  #nContent td:hover{
+      background: rgba(0, 176, 240, 0.801);
+  }
+
+  #Ctitle{
+      font-size: 25px;
+      margin-left: 10px;
+      padding-top: 20px;
+  }
+
+  #Cdescrip{
+    padding: 0px;
+    margin-left: 10px; 
+    margin-right: 10px;
+  }
+
+  #CCategory{
+      margin-left: 10px;
+      color: rgb(66, 66, 66);
+  }
+
+  #dropbar{
+      display: none;
+      background: rgba(0, 176, 240, 0.801); 
+      transition: all 1s ease 3s;
+      width: 100%;
+      height: 220px;
+      float: left;
+  }
+
+  /* 클래스 셀렉터 */
+  .AdBanner{
+      background-color: none;
+      margin-top: 18px;
+      padding: 0px;
+  }
+  
+  .notice,.QandA,.column,.community {
+     float: left;
+     height: 250px;
+      width: 50%;
+  }
+
+  .popular{
+      background-color: rgba(0, 176, 240, 0.801);
+      width: 100%;
+      height: 50px;
+      text-decoration: none;
+      color: black;
+  }
+
+  .GRFunc{
+      padding: 0px;
+      margin: 0px;
+      list-style: none;
+  }
+
+  .GRFunc li{
+      height: 40px;
+      display: inline-block;
+  }
+
+  .asContent{
+    margin-left: 10px;
+}
+
+.good{
+    margin-left: 10px;
+}
+
+.DesShort:hover{
+    box-shadow: 5px 5px 2px black;
+}
